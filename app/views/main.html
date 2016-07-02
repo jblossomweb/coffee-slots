@@ -1,0 +1,42 @@
+<div class="container">
+  <!-- header -->
+  <div class="row">
+    <div class="col-xs-8 text-left">
+      <h1 class="font-viga">Coffee Slot Machine</h1>
+      <p class="font-indie-flower">A good developer is a caffeinated developer.</p>
+    </div>
+    <div class="col-xs-4 text-right">
+      <h3 class="font-viga text-success">${{ dollars }}</h3>
+      <p class="font-indie-flower">spins: {{ spins }}</p>
+    </div>
+  </div>
+
+  <!-- slot machine -->
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-xs-4" ng-repeat="slot in slots track by $index">
+        <div class="slot">
+          <span count-to="{{ slot }}" value="1" duration=".25"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- cta -->
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <button type="button" class="btn btn-success btn-lg font-viga" ng-click="spin()" ng-disabled="disabled">
+        SPIN THE SLOTS!
+      </button>
+    </div>
+  </div>
+
+  <!-- alerts -->
+  <div class="row" style="padding-top:22px;">
+    <div class="col-xs-12">
+      <div ng-repeat="alert in alerts" class="font-viga alert alert-{{ alert.type }}">
+        {{ alert.message }}
+      </div>
+    </div>
+  </div>
+</div>
