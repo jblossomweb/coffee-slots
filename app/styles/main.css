@@ -77,6 +77,12 @@ body {
     line-height: 140px;
 }
 
+.slot img {
+  width:80%;
+  max-width:120px;
+  margin-bottom:12px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
