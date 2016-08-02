@@ -41,6 +41,6 @@
   },
   "scripts": {
     "test": "karma start test/karma.conf.js",
-    "start": "grunt --force"
+    "start": "grunt"
   }
 }
