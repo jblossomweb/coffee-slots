@@ -1,5 +1,5 @@
 {
-  "name": "espressoslots",
+  "name": "coffee-slots",
   "private": true,
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
@@ -39,5 +39,9 @@
   },
   "scripts": {
     "test": "karma start test/karma.conf.js"
+  },
+  "dependencies": {
+    "grunt": "0.4.5",
+    "grunt-cli": "1.2.0"
   }
 }
